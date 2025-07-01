@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "2.38.2",
+    "langchain": "^0.3.29",
     "openai": "4.12.3",
     "vite": "latest"
   },
-  "devDependencies": {}
+  "type": "module"
 }
