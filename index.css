@@ -1,4 +1,129 @@
-html, body {
+* {
+    --black:#000C36;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--black);
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.icon {
+    width: 100%;
+    text-align: center;
+}
+
+.icon img {
+    width:99px;
+    height: 108px;
+    margin: auto;
+    margin-top: 50px;
+}
+.icon h1 {
+    font-family: 'Carter One', cursive;
+    font-size: 45px;
+}
+
+main {
+    width: 393px;
+    margin: 35px auto 46px;
+}
+
+.screen-1, .screen-2 {
+    width: 393px;
+    margin: auto;
+} 
+
+label {
+    display: block;
+    margin: 0 auto 0;
+    width: 328px;
+    font-size: 16px;
+    margin-bottom: 34px;
+}
+
+label p {
+    margin-bottom: 8px;
+    width: 326px;
+    margin-left: auto;
+    font-size: 16px;
+}
+
+textarea {
+    width: 325px;
+    border-radius: 10px;
+    background-color: #3B4877;
+    border: none;
+    resize: none;
+    padding: 10px;
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    outline: none;
+    margin: auto;
+}
+
+textarea::placeholder {
+    color: #05060C;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+#firstchoice {
+    height: 90px;
+}
+
+#secondchoice {
+    height: 74px;
+}
+
+#thirdchoice {
+    height: 74px;
+}
+
+form {
+    width: 328px;
+    margin: 0 auto 0;
+}
+
+button {
+    background-color: #51E08A ;
+    width : 325px;
+    height: 71px;
+    margin: 46px auto 66px;
+    display: block;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+    border-radius: 10px;
+}
+
+.screen-2 {
+    margin-top: 50px;
+}
+
+.screen-2 div {
+    width: 334px;
+    margin: auto;
+}
+
+.screen-2 h2{
+    width: 326px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.screen-2 p {
+    font-size: 18px;
+    width: 325px;
+    margin: auto;
+    vertical-align: middle;
+    margin-bottom: 75px;
 }

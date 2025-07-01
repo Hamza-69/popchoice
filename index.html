@@ -2,9 +2,44 @@
 <html>
     <head>
         <title>PopChoice</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Slab:wght@100..900&display=swap');
+        </style>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <header class="icon">
+            <img src="/popcorn.png" alt="">
+            <h1>PopChoice</h1>
+        </header>
+        <main>
+            <div class="screen-1">
+                <form>
+                    <label>
+                        <p>What's your favorite movie and why?</p>
+                        <textarea id = "firstchoice" placeholder="Enter your favorite movie.."></textarea>
+                    </label>
+                    <label>
+                        <p>Are you in the mood for something new or a classic?</p>
+                        <textarea id = "secondchoice"  placeholder="I want to watch movies that were released after 1990"></textarea>
+                    </label>
+                    <label>
+                        <p>Do you wanna have fun or do you want something serious?</p>
+                        <textarea id = "thirdchoice" placeholder="I want to watch something stupid and fun"></textarea>
+                    </label>
+                    <button>
+                        Let's Go
+                    </button>
+                </form>
+            </div>
+            <div style = "display: none;" class="screen-2">
+                <div>
+                    <h2 class="title">School of Rock (2009)</h2>
+                    <p class="text">A fun and stupid movie about a wannabe rocker turned fraud substitute teacher forming a rock band with his students to win the Battle of the Bands</p>
+                </div>
+                <button>Go Again</button>
+            </div>
+        </main>
         <script type="module" src="index.js"></script>
     </body>
 </html> 
