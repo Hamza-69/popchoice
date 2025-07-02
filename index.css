@@ -64,6 +64,7 @@ textarea {
     font-size: 14px;
     outline: none;
     margin: auto;
+    color: white;
 }
 
 textarea::placeholder {
