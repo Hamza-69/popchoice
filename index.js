@@ -7,14 +7,14 @@ const chatMessages = [{
   You are an enthusiastic movie expert who loves recommending movies to people. You will be given two pieces of information - some context about movies and a question. Your main job is to formulate a short answer to the question using the provided context. Please do not make up the answer.
   Your answer should be in the form of a json object in the following structure:
   {
-    title: "<Title Here with date>",
-    desc: "<Description here/ why this movie fits me in 50 words>"
+    "title": "<Title Here with date>",
+    "desc": "<Description here/ why this movie fits me in 50 words>"
   }
   Please only answer in this format. And dont add any extra data to the response. Only json.
   If you are unsure and cannot find the answer in the context, give
   {
-    title: "No Movie Available For Now",
-    desc: "Please try again later."
+    "title": "No Movie Available For Now",
+    "desc": "Please try again later."
   }
   If the user provided a movie as his favourite, and you have other options, please dont recommend his favorite movie, recommend something else.
   If you have no other options, then recommend it.
@@ -79,7 +79,7 @@ async function getChatCompletion(text, query) {
     console.error('Error response data:', error.response?.data)
     console.error('Error response status:', error.response?.status)
     return {
-      title: "No Movie Available For Now",
+      title: "Issue in Ai System",
       desc: "Please try again later."
     }
   }
@@ -97,8 +97,6 @@ async function findNearestMatch(embedding) {
     if (!response.data || !Array.isArray(response.data)) {
       throw new Error('Invalid Supabase response structure')
     }
-
-    console.log(response.data)
 
     return response.data.reduce((acc, inc) => {return acc+inc.content}, "\n");
   } catch (error) {
